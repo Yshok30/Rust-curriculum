@@ -3,6 +3,7 @@
 ### Self-Contained · 100% Verifiable · Repo-Independent · Moderate Difficulty
 
 **Target:** Open-source developers entering Bitcoin, Lightning, Nostr, and distributed systems ecosystems via Rust.
+**Net Systems Value:** ~300% of the book's distributed systems content. Bitcoin is treated as *one instance* of P2P design.
 
 **Pedagogy:**
 - **Weeks 1–3:** Pure Rust fundamentals. Bitcoin concepts are **opt-in only** (Stretch/Deep Dive).
@@ -101,7 +102,7 @@ These repos are cited as **inspiration** for the curious. You do not need to clo
 | 6 | 🔴 Deep Dive | Ownership Analysis — Provided Snippet | Analyze a provided `Proof` snippet and return `[bool; 5]`. |
 
 <details>
-<summary><b>📖 Expand All Assignment Details</b></summary>
+<summary><h3><b>📖 Expand All Assignment Details</b></h3></summary>
 
 ---
 
@@ -423,7 +424,7 @@ Analysis: [true, true, false, true, false]
 | 6 | 🔴 Deep Dive | Error Taxonomy Analysis | Map a provided `WalletError` enum's variants to categories and count them. |
 
 <details>
-<summary><b>📖 Expand All Assignment Details</b></summary>
+<summary><h3><b>📖 Expand All Assignment Details</b></h3></summary>
 
 ---
 
@@ -674,7 +675,7 @@ count_by_category([...]) = {"funds": 1, "data": 2, "network": 1, "user": 1}
 | 6 | 🔴 Deep Dive | Collection Design — Provided Snippet | Analyze why a provided `Mempool` uses `HashMap` vs `VecDeque`. |
 
 <details>
-<summary><b>📖 Expand All Assignment Details</b></summary>
+<summary><h3><b>📖 Expand All Assignment Details</b></h3></summary>
 
 ---
 
@@ -938,7 +939,7 @@ Analysis: ["HashMap provides O(1) lookup by id", "VecDeque allows efficient push
 | 6 | 🔴 Deep Dive | Mutex Choice Analysis | Analyze `std::sync::Mutex` vs `tokio::sync::Mutex` snippets and explain when to use each. |
 
 <details>
-<summary><b>📖 Expand All Assignment Details</b></summary>
+<summary><h3><b>📖 Expand All Assignment Details</b></h3></summary>
 
 ---
 
@@ -1233,7 +1234,7 @@ Analysis: ["A is faster...", "B can be held across await...", "B is required bec
 | 6 | 🔴 Deep Dive | Protocol Parser Bug Hunt | Fix a buggy `read_message_length` that uses `read` instead of `read_exact`. |
 
 <details>
-<summary><b>📖 Expand All Assignment Details</b></summary>
+<summary><h3><b>📖 Expand All Assignment Details</b></h3></summary>
 
 ---
 
@@ -1471,7 +1472,7 @@ Fixed parser with slow stream: returns 42 (correct!)
 | 6 | 🔴 Deep Dive | Async Flow Analysis — Provided Snippet | Identify the blocking-syscall bug in a provided async peer handler. |
 
 <details>
-<summary><b>📖 Expand All Assignment Details</b></summary>
+<summary><h3><b>📖 Expand All Assignment Details</b></h3></summary>
 
 ---
 
@@ -1720,7 +1721,7 @@ Symptom: Under load, all peer connections would stall because the executor threa
 | 6 | 🔴 Deep Dive | Workspace Design Analysis — Provided Structure | Analyze a provided workspace layout and justify design decisions. |
 
 <details>
-<summary><b>📖 Expand All Assignment Details</b></summary>
+<summary><h3><b>📖 Expand All Assignment Details</b></h3></summary>
 
 ---
 
@@ -2015,7 +2016,7 @@ Analysis: ["core is separate...", "network needs core types...", "A single file 
 | 6 | 🔴 Deep Dive | Gossip Flow Analysis — Provided Snippet | Analyze a provided `GossipStore` and identify data flow and design tradeoffs. |
 
 <details>
-<summary><b>📖 Expand All Assignment Details</b></summary>
+<summary><h3><b>📖 Expand All Assignment Details</b></h3></summary>
 
 ---
 
@@ -2296,5 +2297,3 @@ Choose **ONE** track. This is where Bitcoin depth becomes primary.
 | Retry, Load Balancing | 7 | Medium |
 | Gossip, DHTs, CAP | 8 | Deep |
 | Consensus | 8 | Conceptual |
-
-**Net Systems Value:** ~300% of the book's distributed systems content. Bitcoin is treated as *one instance* of P2P design.
