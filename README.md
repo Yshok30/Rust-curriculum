@@ -5,7 +5,7 @@
 
 **Primary Source:** [Building Bitcoin in Rust Book By Lukáš Hozda - braiins](https://braiins.com/books/building-bitcoin-in-rust?lang=en)
 
-**Net Systems Value:** >2 Times of the book's distributed systems content. Bitcoin is treated as *one instance* of P2P design.
+**Net Systems Value:** >2 Times of the book's distributed systems content. Bitcoin is treated as *one instance* of P2P design, a conscious choice made because other Bitcoin-focused cohorts already cover pure Bitcoin-specific topics in depth.
 
 **Pedagogy:**
 - **Weeks 1–3:** Pure Rust fundamentals. Bitcoin concepts are **opt-in only** (Stretch/Deep Dive).
