@@ -1,10 +1,9 @@
-# Rust for Distributed Systems Engineers
-## 8-Week Cohort Curriculum — Final Edition
-### Self-Contained · 100% Verifiable · Repo-Independent · Moderate Difficulty
+# Rust curriculum for Distributed Systems Engineers
+### 8-Week ·  Self-Contained · 100% Verifiable · Repo-Independent · Moderate Difficulty
 
 **Target:** Open-source developers entering Bitcoin, Lightning, Nostr, and distributed systems ecosystems via Rust.
 
-**Net Systems Value:** ~300% of the book's distributed systems content. Bitcoin is treated as *one instance* of P2P design.
+**Net Systems Value:** >2 Times of the book's distributed systems content. Bitcoin is treated as *one instance* of P2P design.
 
 **Pedagogy:**
 - **Weeks 1–3:** Pure Rust fundamentals. Bitcoin concepts are **opt-in only** (Stretch/Deep Dive).
