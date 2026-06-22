@@ -1,4 +1,4 @@
-# 🦀 Rust for Distributed Systems Engineers
+# Rust for Distributed Systems Engineers
 ## 8-Week Cohort Curriculum — Final Edition
 ### Self-Contained · 100% Verifiable · Repo-Independent · Moderate Difficulty
 
