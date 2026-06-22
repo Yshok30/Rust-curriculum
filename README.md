@@ -3,6 +3,8 @@
 
 **Target:** Open-source developers entering Bitcoin, Lightning, Nostr, and distributed systems ecosystems via Rust.
 
+**Primary Source:** [Building Bitcoin in Rust Book By Lukáš Hozda - braiins](https://braiins.com/books/building-bitcoin-in-rust?lang=en)
+
 **Net Systems Value:** >2 Times of the book's distributed systems content. Bitcoin is treated as *one instance* of P2P design.
 
 **Pedagogy:**
