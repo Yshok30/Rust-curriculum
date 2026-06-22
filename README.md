@@ -3,6 +3,7 @@
 ### Self-Contained · 100% Verifiable · Repo-Independent · Moderate Difficulty
 
 **Target:** Open-source developers entering Bitcoin, Lightning, Nostr, and distributed systems ecosystems via Rust.
+
 **Net Systems Value:** ~300% of the book's distributed systems content. Bitcoin is treated as *one instance* of P2P design.
 
 **Pedagogy:**
