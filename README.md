@@ -10,7 +10,7 @@
 **Pedagogy:**
 - **Weeks 1–3:** Pure Rust fundamentals. Bitcoin concepts are **opt-in only** (Stretch/Deep Dive).
 - **Weeks 4–8:** Bitcoin and P2P concepts enter as anchors (~10–15%), never overwhelming the systems engineering core.
-- **QnA First:** Weekly questions are primarily conceptual QnA. Code questions (especially Q10) present a snippet and ask a conceptual question — answered verbally, not by writing code.
+- **QnA First:** Weekly questions are primarily conceptual QnA. Code questions (especially Q10) present a snippet and ask a conceptual question answered verbally, not by writing code.
 - **100% Verifiable:** Every assignment specifies exact expected outputs (stdout, test assertions, or file artifacts) validated via `cargo test` or `cargo run`. No mentor reviews. No subjective grading.
 - **Repo-Independent:** Outside repos are tagged as **Hints / References only**. All assignments are self-contained. You never need to clone, build, or read external repos to complete Core or Stretch work.
 - **Difficulty Mix:** Core = easy (~60%). Stretch = moderate (~25%). Deep Dive = harder (~15%).
@@ -38,7 +38,7 @@
 
 ---
 
-## Reading References (Hints Only — Not Required for Assignments)
+## Reading References (Hints Only Not Required for Assignments)
 
 These repos are cited as **inspiration** for the curious. You do not need to clone, build, or read them to complete any assignment.
 
@@ -82,7 +82,7 @@ These repos are cited as **inspiration** for the curious. You do not need to clo
 7. **Q:** What happens when an owned value goes out of scope? How does Rust ensure memory is freed without a garbage collector?
 8. **Q:** In the context of distributed systems, why might a node prefer stack-allocated arrays for protocol headers instead of heap-allocated vectors?
 9. **Q:** What is a struct? What is an enum? Give a real-world example of when an enum is better than a struct for modeling state.
-10. **Code:** Look at the following snippet. Will it compile? If not, what is the exact error message you would expect, and why? Answer verbally — no need to write the fix.
+10. **Code:** Look at the following snippet. Will it compile? If not, what is the exact error message you would expect, and why?
     ```rust
     fn main() {
         let s = String::from("hello");
@@ -405,7 +405,7 @@ Analysis: [true, true, false, true, false]
 7. **Q:** In a distributed system, why is it dangerous to use `unwrap()` on network I/O results? What should you do instead?
 8. **Q:** What are trait bounds? Why does a function `fn print<T: Display>(item: T)` require `T` to implement `Display`?
 9. **Q:** How does `Result` composability (`map`, `and_then`) help prevent deeply nested error-handling code?
-10. **Code:** Look at the following snippet. What will it print, and why? Answer verbally — no need to write code.
+10. **Code:** Look at the following snippet. What will it print, and why?
     ```rust
     fn main() {
         let x = Some(5);
@@ -656,7 +656,7 @@ count_by_category([...]) = {"funds": 1, "data": 2, "network": 1, "user": 1}
 7. **Q:** What is the difference between `String` and `&str`? Why can't you use `&str` as a HashMap key if it comes from a local variable?
 8. **Q:** Explain the concept of "data locality." Why is a `Vec` often faster than a linked list for sequential access, even though inserting in the middle is expensive?
 9. **Q:** What does `collect()` do? What type does it return, and how does Rust know which collection to build?
-10. **Code:** Look at the following snippet. What will it print, and why? Answer verbally — no need to write code.
+10. **Code:** Look at the following snippet. What will it print, and why?
     ```rust
     fn main() {
         let nums = vec![1, 2, 3, 4, 5];
@@ -918,7 +918,7 @@ Analysis: ["HashMap provides O(1) lookup by id", "VecDeque allows efficient push
 7. **Q:** What is lock contention? How does it manifest, and how can you reduce it?
 8. **Q:** Why is `Mutex` poisoning a thing in Rust? How do you recover from a poisoned mutex?
 9. **Q:** Use AI to analyze `fedimint` or `bdk`: What are the top 3 concurrency patterns used? Summarize in your own words.
-10. **Code:** Look at the following snippet. Will it compile? If not, what is the exact error and why? Answer verbally — no need to write the fix.
+10. **Code:** Look at the following snippet. Will it compile? If not, what is the exact error and why?
     ```rust
     fn main() {
         let v = vec![1, 2, 3];
@@ -1217,7 +1217,7 @@ Analysis: ["A is faster...", "B can be held across await...", "B is required bec
 7. **Q:** What is `serde`? How does a derive macro like `#[derive(Serialize)]` work at a high level?
 8. **Q:** What is the difference between `read_exact` and `read` on a `TcpStream`? When might you use each?
 9. **Q:** How does a protocol evolve over time without breaking existing nodes? What is backward compatibility?
-10. **Code:** Look at the following snippet. A junior dev wrote this to read a 4-byte message length from a TCP stream. What is the bug, and what kind of corruption could it cause in a running system? Answer verbally — no need to write the fix.
+10. **Code:** Look at the following snippet. A junior dev wrote this to read a 4-byte message length from a TCP stream. What is the bug, and what kind of corruption could it cause in a running system?
     ```rust
     let mut buf = [0u8; 4];
     stream.read(&mut buf)?;
@@ -1455,7 +1455,7 @@ Fixed parser with slow stream: returns 42 (correct!)
 7. **Q:** What is cancellation safety? Why might a partially sent network message be dangerous if a task is cancelled?
 8. **Q:** In a distributed system, why is non-blocking I/O essential for handling thousands of peer connections?
 9. **Q:** How does `rust-lightning` run background tasks? What role does the `BackgroundProcessor` play?
-10. **Code:** Look at the following async function. A junior dev says "this looks fine to me." What is the problem, and what symptom would you see in production? Answer verbally — no need to write the fix.
+10. **Code:** Look at the following async function. A junior dev says "this looks fine to me." What is the problem, and what symptom would you see in production?
     ```rust
     async fn load_config(path: &str) -> String {
         std::fs::read_to_string(path).unwrap()
@@ -1696,7 +1696,7 @@ Symptom: Under load, all peer connections would stall because the executor threa
 7. **Q:** What are the `Send` and `Sync` traits? Why is `Rc<T>` not `Send`, and why is `RefCell<T>` not `Sync`?
 8. **Q:** What is object safety? Why can't a trait with generic methods be made into a `dyn Trait`?
 9. **Q:** How does `thiserror` reduce boilerplate compared to manually implementing `std::fmt::Display` and `std::error::Error`?
-10. **Code:** Look at the following snippet. A junior dev wants to store different message handlers in a single `Vec`. What is the simplest way to make this work, and what is the runtime tradeoff compared to the generic version? Answer verbally — no need to write code.
+10. **Code:** Look at the following snippet. A junior dev wants to store different message handlers in a single `Vec`. What is the simplest way to make this work, and what is the runtime tradeoff compared to the generic version?
     ```rust
     trait Handler { fn handle(&self, msg: &str); }
     struct EchoHandler;
@@ -1997,7 +1997,7 @@ Analysis: ["core is separate...", "network needs core types...", "A single file 
 7. **Q:** What is a heartbeat protocol? How do you balance detecting dead nodes quickly vs. avoiding false positives?
 8. **Q:** What is anti-entropy in gossip protocols? Why is it necessary even with push-based gossip?
 9. **Q:** In a distributed system, what is a quorum? Why might a system require a majority quorum for configuration changes?
-10. **Code:** Look at the following function that calculates XOR distance between two node IDs. A junior dev asks: "Why XOR? Why not just subtract the numbers?" What is the key mathematical property of XOR that makes it perfect for Kademlia's routing table? Answer verbally — no need to write code.
+10. **Code:** Look at the following function that calculates XOR distance between two node IDs. A junior dev asks: "Why XOR? Why not just subtract the numbers?" What is the key mathematical property of XOR that makes it perfect for Kademlia's routing table?
     ```rust
     fn xor_distance(a: &[u8; 20], b: &[u8; 20]) -> [u8; 20] {
         let mut result = [0u8; 20];
