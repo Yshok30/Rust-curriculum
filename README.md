@@ -99,9 +99,9 @@ These repos are cited as **inspiration** for the curious. You do not need to clo
 | 1 | 🟢 Core | Hello, Peer! | Build a `Peer` struct and a `greet()` function. |
 | 2 | 🟢 Core | Borrow Checker Fix-It Shop | Fix 3 named borrow-checker bugs. |
 | 3 | 🟢 Core | Traffic Light State Machine | Model `Red → Green → Yellow → Red` with an enum. |
-| 4 | 🟡 Stretch | The Builder Pattern — Simple Config | Build a `ServerConfig` using a builder pattern. |
+| 4 | 🟡 Stretch | The Builder Pattern Simple Config | Build a `ServerConfig` using a builder pattern. |
 | 5 | 🟡 Stretch | Stack vs Heap Audit | Use `size_of_val` to measure stack vs heap allocation. |
-| 6 | 🔴 Deep Dive | Ownership Analysis — Provided Snippet | Analyze a provided `Proof` snippet and return `[bool; 5]`. |
+| 6 | 🔴 Deep Dive | Ownership Analysis Provided Snippet | Analyze a provided `Proof` snippet and return `[bool; 5]`. |
 
 <details>
 <summary><h3><b>📖 Expand All Assignment Details</b></h3></summary>
@@ -1199,7 +1199,7 @@ Analysis: ["A is faster...", "B can be held across await...", "B is required bec
 - **Ch. 5 (Implementing a Bitcoin Library):** "Serialization into and deserialization out of files" (p. 256)
 
 **Articles:**
-- [Rust by Example: TCP Server](https://doc.rust-lang.org/rust-by-example/std/net/tcp.html)
+- [Rust by Example: TCP Server](https://doc.rust-lang.org/book/ch21-01-single-threaded.html)
 - [Serde Guide](https://serde.rs/)
 
 **Reference Repos (Hints Only):**
